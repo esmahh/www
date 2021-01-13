@@ -77,8 +77,8 @@ body {
     
   }
   
-  .header a:hover {
-    background-color: #ddd;
+  .header a {
+    
     color: black;
   }
   
@@ -98,6 +98,6 @@ body {
       text-align: left;
     }
     
-    .header-right {
+    .header-right:hover {
       float: none;
     }
