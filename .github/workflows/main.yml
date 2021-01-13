@@ -24,4 +24,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: curl -X POST -F token=TOKEN -F ref=master https://gitlab.com/api/v4/projects/23650185/trigger/pipeline
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
+        run: curl -X POST -F token=$TOKEN -F ref=master https://gitlab.com/api/v4/projects/23650185/trigger/pipeline
